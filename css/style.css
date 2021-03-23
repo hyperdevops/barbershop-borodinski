@@ -28,3 +28,104 @@ h2 {
   font-size: 28px;
   margin: 20px 0;
 }
+
+h3 {
+  font-size: 24px;	
+  margin: 30px 0;
+}
+
+.container{
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.header {
+  background-color: black;
+}
+
+.inner-page {
+  color: #000000;
+  background-color: #f9f6f3;
+  background-image: url("../img/bg-block.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
+.inner-page .header-navigation {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+.inner-page .header-logo {
+  order: 0;
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
+}
+
+.inner-page .user-navigation{
+  margin-left: auto;
+}
+
+.header-navigation {
+  font-size: 16px;
+	line-height: 20px;
+}
+
+.header-navigation .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation a,
+.user-navigation a {
+	display: block;
+	padding: 25px 20px;
+}
+
+.header-navigation li:hover{
+  background: #242424;
+}
+
+.user-navigation .login-link{
+  position: relative;
+  padding-left: 40px;
+}
+
+.login-link::before{
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 28px;
+  width: 14px;
+  height: 14px;
+  background: url("../img/login.png") no-repeat;
+}
+
+.login-link:hover::before{
+  background: url("../img/login-hover.png") no-repeat;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: #242424;
+}
+
+/* Логотип */
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
