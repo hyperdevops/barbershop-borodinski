@@ -506,3 +506,66 @@ h3 {
 .fixed-overlay-login.open{
   display: block;
 }
+
+input[type="checkbox"]{
+  display: none;
+}
+input[type="checkbox"] + label{
+  box-sizing: border-box;
+  position: relative;
+  left: 40px;
+}
+input[type="checkbox"] + label::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  top: -2px;
+  left: -43px;
+}
+input[type="checkbox"]:checked+label::before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: white url('../img/cross.svg') no-repeat center;
+}
+
+
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"] + label{
+  box-sizing: border-box;
+  position: relative;
+  left: 40px;
+}
+input[type="radio"] + label::before{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid black;
+  border-radius: 50%;
+  left: -43px;
+  top: -1px;
+}
+input[type="radio"]:checked+label::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  left: -38px;
+  top: 4px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus{
+  border: 2px solid #663d15;
+  outline: 0;
+}
+label:hover{
+  color: #663d15;
+}
