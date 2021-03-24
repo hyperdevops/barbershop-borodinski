@@ -4,7 +4,7 @@ html {
   min-width: 1000px;
 }
 
-.main {
+body {
   font-family: 'PT Sans Narrow', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
