@@ -514,6 +514,85 @@ h3 {
   width: 78px;
 }
 
+.pagination-list{
+  margin-top: 25px;
+  margin-left: 20px;
+}
+.pagination-item{
+  display: inline-block;
+  margin-right: 4px;
+}
+.pagination-item a{
+  display: block;
+  width: 43px;
+  height: 43px;
+  background: black;
+  text-align: center;
+  line-height: 43px;
+}
+.pagination-item a:hover{
+  background-color: #663d15;
+}
+.pagination-item-current a{
+  color: black;
+  background: white;
+}
+
+
+.product-card{
+  display: flex;	
+  margin-top: 57px;
+  margin-bottom: 42px;
+}
+.product-info{
+  padding-left: 90px;
+}
+.gallery-wrapper{
+  width: 460px;
+}
+.gallery-product{
+  display: flex;
+  margin-top: 14px;
+}
+.gallery-full{
+  margin: 0;
+}
+.gallery-photo{
+  margin-right: 20px;
+}
+.gallery-photo:last-child{
+  margin-right: 0;
+}
+.gallery-photo-open{
+  display: block;
+}
+.product-description{
+  display: flex;
+  justify-content: space-between;
+  margin: 19px 0 0 0;
+}
+.product-text{
+  line-height: 24px;
+  margin-top: 29px;
+}
+.product-price{
+  font-size: 0;
+  margin-top: 36px;
+  margin-bottom: 55px;
+}
+.product-price .item-cost{
+  font-size: 14px;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  line-height: 43px;
+  background: #e5e5e5;
+  width: 109px;
+  height: 44px;
+}
+.product-price .button{
+  width: 79px
+}
 
 
 .login-page .modal-login{
