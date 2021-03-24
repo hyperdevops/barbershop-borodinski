@@ -166,3 +166,69 @@ h3 {
   background: white;
   transform: rotate(45deg);
 }
+
+/* News and Gallery */
+
+.row{
+  display: flex;
+  width: 100%;
+  background: url('../img/bg-block.jpg') repeat;
+  margin-bottom: 65px;
+}
+
+.row>section{
+  width: 50%;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  box-sizing: border-box;
+  position: relative;
+  background: white;
+  color: black;
+}
+
+/* News */
+
+.news{
+  padding-left: 80px; 
+  width: 50%;
+}
+
+.news-list{
+  margin-top: 20px;
+}
+.news-item{
+  margin-bottom: 21px;
+}
+
+.news-item p{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  padding-right: 20px;
+}
+
+.news-item time{
+  display: block;
+  text-transform: none;
+}
+
+/* Gallery */
+
+.gallery{
+  padding-left: 93px;
+  width: 50%;
+  box-shadow: black -110px 0 20px -114px; 
+}
+
+.gallery-content{
+  width: 286px;
+  height: 164px;
+  margin-left: 5px;
+  margin-top: 30px;
+}
+
+.gallery-button{
+  margin-top: 30px;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
