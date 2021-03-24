@@ -232,3 +232,74 @@ h3 {
   margin-right: 15px;
   text-transform: uppercase;
 }
+
+/* Contacts */
+
+.contacts{
+  padding-left: 80px; 
+}
+
+.contacts p{
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 19px 0;
+}
+
+.contacts .button{
+  margin-right: 19px;
+  margin-top: 5px;
+}
+
+/* Appoinment */
+
+.appointment{
+  width: 300px;
+  padding-left: 91px;
+  box-shadow: black -110px 0 20px -114px; 
+}
+
+.appointment-form{
+  width: 300px;
+}
+
+.appointment-item input[type="text"]::placeholder{
+  color: #4a4948;
+  padding-left: 15px;
+  
+}
+
+.appointment>p{
+  margin: 18px 0 0 0;
+}
+
+.appointment p{
+  width: 300px;
+  margin-right: 20px;
+
+}
+
+.appointment-item{
+  display: inline-block;
+  margin: 0;
+}
+.appointment-item label{
+  margin-bottom: 5px;
+  display: block;		
+  padding-left: 15px;
+}
+.appointment-item input{
+  width: 136px;
+  height: 37px;
+  border: 2px solid black;
+}
+.appointment-row{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+}
+.appointment .button{
+  width: 100%;
+  margin-top: 17px;
+  text-transform: uppercase;
+}
