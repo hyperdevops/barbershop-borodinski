@@ -381,3 +381,128 @@ h3 {
 .button:hover{
   background-color: #663d15;
 }
+
+
+.login-page .modal-login{
+  position: static;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  box-shadow: 0 0 15px 0 rgba(0,1,1,.2);
+}
+
+.login-page .login-form-close-btn{
+  display: none;
+}
+.modal{
+  position: absolute;
+  box-sizing: border-box;
+}
+.modal>.button{
+  width: 45px;
+  height: 45px;
+  background: transparent;
+}
+.modal-login{
+  left: calc(50% - 230px);
+  top: calc(50% - 190px);
+  color: black;
+  width: 460px;
+  background: white;
+  padding: 50px 80px;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+}
+.login-form>.login-form-item{
+  width: 300px;
+  height: 43px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  margin-bottom: 9px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  background-position: 260px center;
+}
+.login-form>.login-form-item::placeholder{
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.login-form-item.login{
+  background-image: url('../img/user.png');
+}
+.login-form-item.password{
+  background-image: url('../img/lock.png');
+}
+.login-form.login::after{}
+.login-form-group{
+  display: flex;
+  justify-content: space-between;
+}
+.login-forgot-password{
+  color: black;
+  text-decoration: underline;
+}
+.login-form-sing-in-btn{
+  width: 100%;
+  text-transform: uppercase;
+}
+.button.login-form-close-btn{
+  padding: 0;
+  position: absolute;
+  top: 0;
+  right: -45px;
+}
+
+.modal-close span{
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  width: 23px;
+  height: 5px;
+  background-color: #d0d0d0;
+}
+.modal-close span:first-child{
+  transform: rotate(45deg);
+}
+.modal-close span:last-child{
+  transform: rotate(-45deg);
+}
+.modal-map{
+  width: 100%;
+  height: 100%;
+}
+.modal-map-container{
+  position: relative;	
+  width: 776px;
+  height: 570px;
+  left: calc(50% - 388px);
+  top: calc(50% - 270px);
+  border: 5px solid white;
+}
+.map-close-btn{
+  position: absolute;
+  right: -50px;
+  top: -5px;
+}
+.fixed-overlay-map,
+.fixed-overlay-login{
+  display: none;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+.fixed-overlay-map.open{
+  display: block;
+}
+.fixed-overlay-login.open{
+  display: block;
+}
