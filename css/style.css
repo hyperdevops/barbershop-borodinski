@@ -595,6 +595,76 @@ h3 {
 }
 
 
+.about-us-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+}
+.about-us-wrapper section{
+  width: 50%;
+  box-sizing: border-box;
+}
+.price{
+  padding-left: 10px;
+}
+.slogan{
+  position: relative;
+  text-align: center;
+  font-size: 48px;
+  line-height: 48px;
+  margin: 0;
+  margin-top: 49px;
+  padding: 0 186px;
+}
+.slogan::before,
+.slogan::after{
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background: black;
+}
+.slogan::before{
+  left: 0;
+  top: calc(50% - 1px);
+}
+.slogan::after{
+  right: 0;
+  top: calc(50% - 1px);
+}
+.price-table{
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+.price-table td{
+  border: 2px solid black;
+  height: 37px;
+}
+.price-cell{
+  text-align: center;
+  width: 50%;
+}
+.service-cell{
+  padding-left: 17px;
+}
+.about-us-wrapper .about-us{
+  font-size: 0px;
+  width: 100%;
+}
+.about-us-collumn{
+  width: 50%;
+  box-sizing: border-box;
+  float: left;
+  font-size: 14px;
+  vertical-align: top;
+  margin: 0 0 80px 0;
+  padding-right: 75px;
+}
+.about-us-collumn:last-child{
+  padding-left: 10px;
+}
+
+
 .login-page .modal-login{
   position: static;
   margin-left: auto;
