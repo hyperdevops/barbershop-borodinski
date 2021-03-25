@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:700" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="inner-page">
+
+	<header class="header">
+		<nav class="header-navigation container">
+			<a class="header-logo" href="index.html">
+				<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li class="site-navigation-current"><a href="price.html">Прайс-лист</a></li>
+				<li><a href="shop.html">Магазин</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li><a class="login-link" href="login.html">Вход</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main class="container">
+		<h1 class="page-title">Прайс-лист</h1>
+		<ul class="breadcrumbs">
+			<li class="breadcrumbs-item"><a href="">Главная</a></li>
+			<li class="breadcrumbs-item breadcrumbs-current"><a href="">Прайс-лист</a></li>
+		</ul>
+		<h2 class="visually-hidden">Описание барбершопа</h2>
+		<p class="slogan">Истинно мужская классика</p>
+		<div class="about-us-wrapper">
+			<section class="tools">
+				<h3>Мы используем только лучшие средства:</h3>
+				<ul class="list-style-2">
+					<li>Baxter of California</li>
+					<li>Mr Natty</li>
+					<li>Suavecito</li>
+					<li>Malin+Goetz</li>
+				</ul>
+			</section>
+			<section class="price">
+				<h3>Цены на услиги наших мастеров:</h3>
+				<table class="price-table">
+					<tr>
+						<td class="service-cell">Стрижка</td>
+						<td class="price-cell">1500 ₽</td>
+					</tr>
+					<tr>
+						<td class="service-cell">Стрижка бороды</td>
+						<td class="price-cell">500 ₽</td>
+					</tr>
+					<tr>
+						<td class="service-cell">Накрутка усов</td>
+						<td class="price-cell">350 ₽</td>
+					</tr>
+				</table>
+			</section>
+			<section class="about-us">
+				<h3>Несколько слов о нас:</h3>
+				<p class="about-us-collumn">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+				<p class="about-us-collumn">Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="footer-contacts">БАРБЕРШОП «БОРОДИНСКИЙ»<br> АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br> <a href="#">Как нас найти?</a><br> ТЕЛЕФОН: +7 (495) 666-02-66</p>
+			<div class="footer-social">
+				<b>Давайте дружить!</b>
+				<ul>
+					<li><a class="button social-button-vk" href="#">Вконтакте</a></li>
+					<li><a class="button social-button-fb" href="#">Фейсбук</a></li>
+					<li><a class="button social-button-inst" href="#">Инстаграм</a></li>
+				</ul>
+			</div>
+			<p class="footer-copyright">
+				<b>Разработано:</b> 
+				<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+			</p>
+		</div>
+	</footer>
+
+	<div class="fixed-overlay-login">
+		<section class="modal modal-login">
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль.</p>
+			<form action="" class="login-form">
+				<input class="login-form-item login" type="text" placeholder="Логин">
+				<input class="login-form-item password" type="password" placeholder="Пароль">
+				<p class="login-form-group">
+					<input class="login-form-item" type="checkbox" id="remember">
+					<label for="remember">Запомните меня</label>
+					<a href="" class="login-forgot-password">Я забыл пароль!</a>
+				</p>
+				<button class="button login-form-sing-in-btn" type="submit">Войти</button>
+			</form>
+			<button class="button login-form-close-btn modal-close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="js/common.js"></script>
+
+</body>
+
+</html>
