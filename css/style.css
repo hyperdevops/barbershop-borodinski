@@ -1,3 +1,53 @@
+/* Universal */
+
+.list-style-1 li{
+  position: relative;
+  left: 22px;
+}
+.list-style-1 li::before{
+  content: "";
+  position: absolute;
+  position: absolute;
+  top: calc(50% - 4px);
+  left: -19px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  transform: rotate(45deg);
+}
+
+.list-style-2 li{
+  position: relative;
+  top: -7px;
+  left: 21px;
+  line-height: 24px;
+  margin-bottom: 13px;
+}
+.list-style-2 li:last-child{
+  margin-bottom: 0;
+}
+.list-style-2 li::before{
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  left: -20px;
+  width: 8px;
+  height: 8px;
+  background: black;
+  transform: rotate(45deg);
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+
 html {
   margin: 0;
   padding: 0;
@@ -121,7 +171,7 @@ h3 {
 	background-color: #242424;
 }
 
-/* Логотип */
+/* Logo */
 
 .logo {
   display: flex;
@@ -365,6 +415,8 @@ h3 {
   height: 43px;
 }
 
+/* Universal styles for buttons */
+
 .button{
   display: inline-block;
   text-align: center;
@@ -382,8 +434,7 @@ h3 {
   background-color: #663d15;
 }
 
-
-
+/* item.html */
 
 .page-title{
   font-size: 30px;
@@ -419,6 +470,7 @@ h3 {
   color: #aba9a7;
 }
 
+/* shop.html */
 
 .filter{
   width: 220px;
@@ -538,7 +590,6 @@ h3 {
   background: white;
 }
 
-
 .product-card{
   display: flex;	
   margin-top: 57px;
@@ -594,6 +645,7 @@ h3 {
   width: 79px
 }
 
+/* price.html */
 
 .about-us-wrapper{
   display: flex;
@@ -664,6 +716,7 @@ h3 {
   padding-left: 10px;
 }
 
+/* login.html */
 
 .login-page .modal-login{
   position: static;
